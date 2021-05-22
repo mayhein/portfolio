@@ -18,13 +18,10 @@ export default function Navbar() {
   };
 
   return (
-    <div className="navbar-bright">
+    <div className="navbar">
       <div className="navbar-container">
-        <div className="navbar-logo-bright">
-          home
-        </div>
-        <div className="menu-icon" onClick={handleClick}>
-          {click ? <p>Close</p> : <p>Hamburger</p>}
+        <div className="navbar-logo">
+          may hein | portfolio
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
@@ -34,15 +31,13 @@ export default function Navbar() {
           </li>
           <li className="nav-item">
             <div className="nav-links" onClick={closeMobileMenu}>
-            contact
+            resume
             </div>
           </li>
-          <li className="nav-btn">
-            { button ? (
-              <button buttonStyle="btn--outline">resume</button>
-            ) : (
-              <button buttonStyle="btn--outline" buttonSize="btn--mobile" onClick={closeMobileMenu}>resume</button>
-            )}
+          <li className="nav-item">
+            <div className="nav-links" onClick={closeMobileMenu}>
+            contact
+            </div>
           </li>
         </ul>
       </div>
