@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="navbar-container">
+      <div className="container">
         <div className="navbar-logo">
           may hein | portfolio
         </div>
